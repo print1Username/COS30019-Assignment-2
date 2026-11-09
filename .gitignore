@@ -218,3 +218,52 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Office and PDF documents
+*.doc
+*.docx
+*.docm
+*.dot
+*.dotx
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+*.ppt
+*.pptx
+*.pptm
+*.pdf
+~$*
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# PyTorch model files
+*.pt
+*.pth
+*.ckpt
+
+# TensorFlow and Keras model files
+*.pb
+*.h5
+*.hdf5
+*.keras
+*.tflite
+*.index
+*.data-*-of-*
