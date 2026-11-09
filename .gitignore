@@ -267,3 +267,11 @@ __marimo__/
 *.tflite
 *.index
 *.data-*-of-*
+
+# Dataset files
+*.csv
+*.tsv
+*.png
+*.jpg
+dataset/
+data/
