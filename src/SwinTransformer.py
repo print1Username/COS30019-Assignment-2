@@ -124,7 +124,7 @@ class SwinTransformer:
         torch.save({
             'model': self.model.state_dict(),
             'classes': self.class_names
-        }, 'animal_model.pth')
+        }, self.model_path)
 
     def LoadModel(self):
         print(f"Load Model: {self.model_path}")

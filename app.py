@@ -57,21 +57,20 @@ def CheckModels():
 if __name__ == "__main__":
     PrintDevice()
     CheckDataset()
-    '''
+
     # Prepared classifier and dataset
     classifier = SwinTransformer(IMAGE_SIZE, MODEL_PATH)
-    
-    CheckModels()
-    
+
     num_classes = classifier.LoadData(TRAIN_FOLDER, SPLIT, BATCH_SIZE)
     classifier.PrepareModel(num_classes)
 
     # Start training model
     classifier.TrainModel(EPOCHS)
 
+    CheckModels()
+
     # Testing dataset
     classifier.LoadModel()
     results = classifier.PredictFolder(TEST_FOLDER, RESULT_FOLDER)
 
     print(f"Total analyze {len(results)} images.")
-    '''
