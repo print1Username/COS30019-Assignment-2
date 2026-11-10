@@ -9,7 +9,7 @@ from PIL import Image
 from torch.utils.data import DataLoader
 from torchvision.datasets import ImageFolder
 
-from Matplotlib import Matplotlib
+from src.Matplotlib import Matplotlib
 
 
 class SwinTransformer:

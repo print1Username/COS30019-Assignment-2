@@ -57,11 +57,12 @@ def CheckModels():
 if __name__ == "__main__":
     PrintDevice()
     CheckDataset()
-    CheckModels()
     '''
     # Prepared classifier and dataset
     classifier = SwinTransformer(IMAGE_SIZE, MODEL_PATH)
-
+    
+    CheckModels()
+    
     num_classes = classifier.LoadData(TRAIN_FOLDER, SPLIT, BATCH_SIZE)
     classifier.PrepareModel(num_classes)
 
